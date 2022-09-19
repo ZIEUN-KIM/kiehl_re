@@ -1,0 +1,201 @@
+/* @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+:root {
+    --mainColor: #3399ff;
+    --containerColor: #eae9e5;
+    --textColor: #3366cc;
+    --textSub: #666666;
+} */
+/* header */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.innerBox {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+header {
+    background: #000000;
+    height: 110px;
+}
+header>.innerBox {
+    position: relative;
+}
+.logo {
+    float: left;
+    padding-top: 15px;
+}
+.iconGnb {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.iconGnb>li {
+    float: left;
+    margin-left: 10px;
+}
+.iconGnb li img {
+    width: 25px;
+}
+.nav {
+    display: flex;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+    text-align: center;
+    justify-content: space-between;
+}
+.nav>li {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.nav>li>a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 40px;
+    color: white;
+}
+.nav>li:hover>a {
+    color: #bdced7;
+}
+.nav>li:hover .sub {
+    display: block;
+}
+.bg {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 110px;
+    z-index: 1000;
+    display:none;
+}
+.sub {
+    display: none;
+    margin-top: 30px;
+    position: absolute;
+    line-height: 50px;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    font-size: 15px;
+}
+.sub>li {
+    float: left;
+    margin-right: 25px;
+}
+.sub3 {
+    margin-left: 140px;
+}
+.sub4 {
+    margin-left: 265px;
+}
+.sub5 {
+    margin-left: 420px;
+}
+.sub>li>a {
+    color: #333;
+}
+.sub>li:hover>a {
+    color: whitesmoke;
+}
+.ham {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    #wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+    .innerBox {
+        display: block;
+    }
+    .ham {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+    .ham a {
+        display: block;
+        width: 26px;
+        height: 26px;
+        background: url(../images/hamW.png) no-repeat;
+        background-size: 100%;
+    }
+    .nav {
+        position: absolute;
+        width: 40%;
+        background-color: #111;
+        display: block;
+        top: 110px;
+        right: -100%;
+        height: 100vh;
+        /* position: fixed; */
+    }
+    .nav>li>a {
+        color: white;
+        border-bottom: 1px solid black;
+        line-height: 3;
+        /* padding: 23px 0 0px 0;
+        display: block; */
+        background: url(../images/mob_gnb_arrow_down_w.png) no-repeat 90% 50%;
+    }
+    .nav>li:last-child>a,
+    .nav>li:last-child>.active{
+        background: none;
+    }
+    .nav>li>a.active {
+        background-image: url(../images/mob_gnb_arrow_up_g.png);
+        background-repeat:  no-repeat;
+    }
+    .sub {
+        position: static;
+        margin-top: 0;
+    }
+    .nav>li:hover .sub {
+        display: none;
+        height: auto;
+    }
+    .nav,
+    .iconGnb {
+        right: -100%;
+    }
+    .sub>li>a {
+        color: white;
+    }
+    .sub>li:hover>a {
+        color: #bdced7;
+    }
+    .bg {
+        background: none;
+        display: none;
+    }
+    .sub {
+        /* line-height: 20px; */
+        display: none;
+    }
+    .sub>li {
+        top: 10px;
+        margin-right: 10px;
+        float: none;
+    }
+    .sub3 {
+        margin-left: 10px;
+    }
+    .sub4 {
+        margin-left: 10px;
+    }
+    .sub5 {
+        margin-left: 10px;
+    }
+    .iconGnb {
+        width: 12%;
+        padding-top: -13px;
+    }
+}

@@ -1,0 +1,22 @@
+.innerBox{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+#mainBanner{
+    position: relative;
+}
+#btn>.bx-pager{
+    display: flex;
+}
+
+#btn>.bx-pager .bx-pager-item{
+    margin-left: 10px;
+    background-color:aliceblue;
+}
+
+#btn>.bx-pager .bx-pager-item a.active{
+    background-color: pink;
+}
+
+

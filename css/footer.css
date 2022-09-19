@@ -1,0 +1,90 @@
+/* -------footer-------------- */
+footer {
+    background-color: #000000;
+    padding-bottom: 50px;
+}
+.footTop a img {
+    width: 12%;
+    margin-left: 620px;
+    margin-top: 40px;
+    margin-bottom: 75px;
+}
+.footBottom .care .title {
+    color: #066eb0;
+    font-size: 25px;
+    font-family: 'Gulzar', serif;
+}
+.customer li a {
+    color: white;
+    line-height: 40px;
+    text-align: left;
+    font-size: 17px;
+}
+.footBottom .contact .title {
+    position: absolute;
+    color: #066eb0;
+    font-size: 25px;
+    font-family: 'Gulzar', serif;
+}
+address p {
+    position: absolute;
+    color: white;
+    font-size: 17px;
+    bottom: 48px;
+    line-height: 40px;
+}
+.contact address .snsMenu a {
+    float: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 45px;
+    height: 30px;
+    position: relative;
+    top: 150px;
+}
+.contact .snsMenu img {
+    height: 90%;
+}
+.footBottom {
+    display: flex;
+}
+.care {
+    flex: 1;
+}
+.contact {
+    flex: 1;
+}
+.emailWrap {
+    flex: 1;
+}
+.footBottom .emailWrap .title {
+    position: relative;
+    color: #066eb0;
+    font-size: 25px;
+    right: 50px;
+    text-align: right;
+    font-family: 'Gulzar', serif;
+}
+.sign form {
+    position: relative;
+    color: #066eb0;
+    font-size: 20px;
+    text-align: left;
+    left: 60px;
+    border-bottom: 1px solid white;
+    width: 50%;
+}
+.sign p img {
+    position: relative;
+    width: 20px;
+    float: right;
+    top: -20px;
+    right: 410px;
+}
+.sign span {
+    position: relative;
+    top: 10px;
+    left: 60px;
+    color: white;
+    font-size: 16x;
+}

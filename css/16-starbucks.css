@@ -1,0 +1,42 @@
+@media screen and (max-width: 1200px){
+    .nav{
+        position:absolute;
+        width: 40%;
+        /* height: 62%; */
+        background-color: #111;
+        display: block;
+        top: 110px;
+        right:-100%;
+    }
+    .nav>li{
+        padding: 0 ;
+        margin: 0;
+
+    }
+    .nav>li>a{
+        color: white;
+        border-bottom: 1px solid black;
+        padding: 23px 0 0px 0;
+        display: block;
+        background: url(../images/mob_gnb_arrow_down_w.png) no-repeat 90% 50%;
+    }
+    .nav>li>a:last-child{
+        background: url("");
+        padding-bottom: 23px;
+    }
+    .nav>li>a.active{
+        background-image: url(../images/mob_gnb_arrow_up_g.png);
+
+    }
+    .sub{
+        position: relative;
+    }
+    .nav>li a:hover .sub{
+        margin-top: 0;
+    }
+    .nav>li:hover .sub {
+        display:none;
+        height: auto;
+        margin-top:0;
+    }
+}
